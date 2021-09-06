@@ -1,4 +1,4 @@
-site_name: Prometheus Component
+site_name: components/prometheus
 site_url: https://docs.karavel.io/components/prometheus
 repo_name: projectkaravel/platform-component-prometheus
 repo_url: https://github.com/projectkaravel/platform-component-prometheus
