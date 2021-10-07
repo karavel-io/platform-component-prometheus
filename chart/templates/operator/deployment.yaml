@@ -25,8 +25,8 @@ spec:
       containers:
       - args:
         - --kubelet-service=kube-system/kubelet
-        - --prometheus-config-reloader=quay.io/prometheus-operator/prometheus-config-reloader:v{{ .Values.operator.version }}
-        image: quay.io/prometheus-operator/prometheus-operator:v{{ .Values.operator.version }}
+        - --prometheus-config-reloader=ghcr.io/prometheus-operator/prometheus-config-reloader:v{{ .Values.operator.version }}
+        image: ghcr.io/prometheus-operator/prometheus-operator:v{{ .Values.operator.version }}
         name: prometheus-operator
         ports:
         - containerPort: 8080

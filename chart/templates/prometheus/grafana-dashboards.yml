@@ -8,7 +8,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: apiserver
+  json: ""
   configMapRef:
     name: grafana-dashboard-apiserver
     key: apiserver.json
@@ -23,7 +23,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: cluster-total
+  json: ""
   configMapRef:
     name: grafana-dashboard-cluster-total
     key: cluster-total.json
@@ -38,7 +38,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: controller-manager
+  json: ""
   configMapRef:
     name: grafana-dashboard-controller-manager
     key: controller-manager.json
@@ -53,7 +53,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: k8s-resources-cluster
+  json: ""
   configMapRef:
     name: grafana-dashboard-k8s-resources-cluster
     key: k8s-resources-cluster.json
@@ -68,7 +68,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: k8s-resources-namespace
+  json: ""
   configMapRef:
     name: grafana-dashboard-k8s-resources-namespace
     key: k8s-resources-namespace.json
@@ -83,7 +83,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: k8s-resources-node
+  json: ""
   configMapRef:
     name: grafana-dashboard-k8s-resources-node
     key: k8s-resources-node.json
@@ -98,7 +98,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: k8s-resources-pod
+  json: ""
   configMapRef:
     name: grafana-dashboard-k8s-resources-pod
     key: k8s-resources-pod.json
@@ -113,7 +113,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: k8s-resources-workload
+  json: ""
   configMapRef:
     name: grafana-dashboard-k8s-resources-workload
     key: k8s-resources-workload.json
@@ -128,7 +128,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: k8s-resources-workloads-namespace
+  json: ""
   configMapRef:
     name: grafana-dashboard-k8s-resources-workloads-namespace
     key: k8s-resources-workloads-namespace.json
@@ -143,7 +143,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: kubelet
+  json: ""
   configMapRef:
     name: grafana-dashboard-kubelet
     key: kubelet.json
@@ -158,7 +158,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: namespace-by-pod
+  json: ""
   configMapRef:
     name: grafana-dashboard-namespace-by-pod
     key: namespace-by-pod.json
@@ -173,7 +173,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: namespace-by-workload
+  json: ""
   configMapRef:
     name: grafana-dashboard-namespace-by-workload
     key: namespace-by-workload.json
@@ -188,7 +188,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: node-cluster-rsrc-use
+  json: ""
   configMapRef:
     name: grafana-dashboard-node-cluster-rsrc-use
     key: node-cluster-rsrc-use.json
@@ -203,7 +203,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: node-rsrc-use
+  json: ""
   configMapRef:
     name: grafana-dashboard-node-rsrc-use
     key: node-rsrc-use.json
@@ -218,7 +218,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: nodes
+  json: ""
   configMapRef:
     name: grafana-dashboard-nodes
     key: nodes.json
@@ -233,7 +233,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: persistentvolumesusage
+  json: ""
   configMapRef:
     name: grafana-dashboard-persistentvolumesusage
     key: persistentvolumesusage.json
@@ -248,7 +248,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: pod-total
+  json: ""
   configMapRef:
     name: grafana-dashboard-pod-total
     key: pod-total.json
@@ -263,7 +263,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: prometheus-remote-write
+  json: ""
   configMapRef:
     name: grafana-dashboard-prometheus-remote-write
     key: prometheus-remote-write.json
@@ -278,7 +278,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: prometheus
+  json: ""
   configMapRef:
     name: grafana-dashboard-prometheus
     key: prometheus.json
@@ -293,7 +293,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: proxy
+  json: ""
   configMapRef:
     name: grafana-dashboard-proxy
     key: proxy.json
@@ -308,7 +308,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: scheduler
+  json: ""
   configMapRef:
     name: grafana-dashboard-scheduler
     key: scheduler.json
@@ -323,7 +323,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: statefulset
+  json: ""
   configMapRef:
     name: grafana-dashboard-statefulset
     key: statefulset.json
@@ -338,7 +338,7 @@ metadata:
     grafana.integreatly.org/instance: grafana-operated
     {{- include "prometheus.labels" . | nindent 4 }}
 spec:
-  name: workload-total
+  json: ""
   configMapRef:
     name: grafana-dashboard-workload-total
     key: workload-total.json
