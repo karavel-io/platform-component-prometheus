@@ -12,7 +12,7 @@ operator:
   version: 0.55.0
 
 thanos:
-  version: 0.23.1
+  version: 0.25.1
 
 kubeRBACProxy:
   version: 0.11.0
