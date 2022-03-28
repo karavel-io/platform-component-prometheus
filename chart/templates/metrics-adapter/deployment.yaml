@@ -33,7 +33,7 @@ spec:
         - --config=/etc/adapter/config.yaml
         - --logtostderr=true
         - --metrics-relist-interval=1m
-        - --prometheus-url=http://prometheus-operated.{{ .Release.Namespace }}.svc.cluster.local:9090/
+        - --prometheus-url=http://prometheus-operated.{{ .Release.Namespace }}.svc:9090/
         - --secure-port=6443
         image: k8s.gcr.io/prometheus-adapter/prometheus-adapter:v{{ .Values.metricsAdapter.version }}
         name: prometheus-adapter

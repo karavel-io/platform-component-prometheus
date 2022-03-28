@@ -47,9 +47,9 @@ spec:
           name: config
           readOnly: true
       - args:
-        - --webhook-url=http://localhost:19115/-/reload
-        - --volume-dir=/etc/blackbox_exporter/
-        image: jimmidyson/configmap-reload:v0.5.0
+        - --reload-url=http://localhost:19115/-/reload
+        - --watched-dir=/etc/blackbox_exporter/config
+        image: ghcr.io/prometheus-operator/prometheus-config-reloader:v{{ .Values.operator.version }}
         name: module-configmap-reloader
         resources:
           limits:
