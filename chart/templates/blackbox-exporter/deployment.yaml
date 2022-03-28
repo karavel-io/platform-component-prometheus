@@ -48,7 +48,7 @@ spec:
           readOnly: true
       - args:
         - --reload-url=http://localhost:19115/-/reload
-        - --watched-dir=/etc/blackbox_exporter/config
+        - --watched-dir=/etc/blackbox_exporter
         image: ghcr.io/prometheus-operator/prometheus-config-reloader:v{{ .Values.operator.version }}
         name: module-configmap-reloader
         resources:
