@@ -19,4 +19,4 @@ spec:
     name: thanos-ruler-config
     key: alerts.yml
   queryEndpoints:
-    - dnssrv+_http._tcp.thanos-query.{{ .Release.Namespace }}.svc.cluster.local
+    - dnssrv+_http._tcp.thanos-query.{{ .Release.Namespace }}.svc
