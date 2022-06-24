@@ -1,3 +1,5 @@
+namespace: prometheus
+
 store: filesystem
 s3:
   bucket:
